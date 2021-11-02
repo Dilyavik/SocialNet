@@ -1,0 +1,15 @@
+D:\Projects\SocialNet\SocialNetData\SocialNetData\bin\Debug\net5.0\SocialNetData.deps.json
+D:\Projects\SocialNet\SocialNetData\SocialNetData\bin\Debug\net5.0\SocialNetData.runtimeconfig.json
+D:\Projects\SocialNet\SocialNetData\SocialNetData\bin\Debug\net5.0\SocialNetData.runtimeconfig.dev.json
+D:\Projects\SocialNet\SocialNetData\SocialNetData\bin\Debug\net5.0\SocialNetData.dll
+D:\Projects\SocialNet\SocialNetData\SocialNetData\bin\Debug\net5.0\ref\SocialNetData.dll
+D:\Projects\SocialNet\SocialNetData\SocialNetData\bin\Debug\net5.0\SocialNetData.pdb
+D:\Projects\SocialNet\SocialNetData\SocialNetData\obj\Debug\net5.0\SocialNetData.csproj.AssemblyReference.cache
+D:\Projects\SocialNet\SocialNetData\SocialNetData\obj\Debug\net5.0\SocialNetData.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\SocialNet\SocialNetData\SocialNetData\obj\Debug\net5.0\SocialNetData.AssemblyInfoInputs.cache
+D:\Projects\SocialNet\SocialNetData\SocialNetData\obj\Debug\net5.0\SocialNetData.AssemblyInfo.cs
+D:\Projects\SocialNet\SocialNetData\SocialNetData\obj\Debug\net5.0\SocialNetData.csproj.CoreCompileInputs.cache
+D:\Projects\SocialNet\SocialNetData\SocialNetData\obj\Debug\net5.0\SocialNetData.dll
+D:\Projects\SocialNet\SocialNetData\SocialNetData\obj\Debug\net5.0\ref\SocialNetData.dll
+D:\Projects\SocialNet\SocialNetData\SocialNetData\obj\Debug\net5.0\SocialNetData.pdb
+D:\Projects\SocialNet\SocialNetData\SocialNetData\obj\Debug\net5.0\SocialNetData.genruntimeconfig.cache

@@ -1,0 +1,12 @@
+D:\Projects\SocialNet\SocialNetServices\bin\Debug\net5.0\SocialNetServices.deps.json
+D:\Projects\SocialNet\SocialNetServices\bin\Debug\net5.0\SocialNetServices.dll
+D:\Projects\SocialNet\SocialNetServices\bin\Debug\net5.0\ref\SocialNetServices.dll
+D:\Projects\SocialNet\SocialNetServices\bin\Debug\net5.0\SocialNetServices.pdb
+D:\Projects\SocialNet\SocialNetServices\obj\Debug\net5.0\SocialNetServices.csproj.AssemblyReference.cache
+D:\Projects\SocialNet\SocialNetServices\obj\Debug\net5.0\SocialNetServices.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\SocialNet\SocialNetServices\obj\Debug\net5.0\SocialNetServices.AssemblyInfoInputs.cache
+D:\Projects\SocialNet\SocialNetServices\obj\Debug\net5.0\SocialNetServices.AssemblyInfo.cs
+D:\Projects\SocialNet\SocialNetServices\obj\Debug\net5.0\SocialNetServices.csproj.CoreCompileInputs.cache
+D:\Projects\SocialNet\SocialNetServices\obj\Debug\net5.0\SocialNetServices.dll
+D:\Projects\SocialNet\SocialNetServices\obj\Debug\net5.0\ref\SocialNetServices.dll
+D:\Projects\SocialNet\SocialNetServices\obj\Debug\net5.0\SocialNetServices.pdb
