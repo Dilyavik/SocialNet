@@ -17,21 +17,40 @@ table {
 }
 
 td {
+    text-align: center;
     border: 0;
 }
 
 
 input {
     border: 1px;
+    border-style: solid;
+    border-color:gray;
     height: 30px;
-    border-radius: 15px;
+    border-radius: 10px;
     margin: 10px;
 }
 
+    input :hover {
+        border: 3px;
+        border-color: black;
+    }
+
 button {
     background-color: #E32636;
-    width:200px;
-    height:40px;
-    border-radius:5px;
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
     border: 1px;
+    font-size: 16px;
+    color: white;
+}
+
+    button:hover {
+        cursor: pointer;
+        background-color: #FF4B3D;
+    }
+
+.cellss {
+    left: 50%;
 }
