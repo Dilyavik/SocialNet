@@ -28,6 +28,11 @@ namespace SocialNetServices.Services
         /// <returns></returns>
         public async Task<bool> Registration(UserRegistrationRequest request)
         {
+            if (string.IsNullOrWhiteSpace(request.FirstName)) throw new Exception("Укажите имя");
+            if (string.IsNullOrWhiteSpace(request.SecondName)) throw new Exception("Укажите фамилию");
+            if (string.IsNullOrWhiteSpace(request.Login)) throw new Exception("Укажите логин");
+            if (string.IsNullOrWhiteSpace(request.Password)) throw new Exception("Укажите пароль");
+
             var isExist = await _db.Users.AnyAsync(x => x.Login == request.Login);
 
             if (isExist)
