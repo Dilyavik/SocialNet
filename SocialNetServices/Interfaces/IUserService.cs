@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace SocialNetServices.Interfaces
 {
+    /// <summary>
+    /// Интерфейс сервиса пользователя
+    /// </summary>
     public interface IUserService
     {
         /// <summary>

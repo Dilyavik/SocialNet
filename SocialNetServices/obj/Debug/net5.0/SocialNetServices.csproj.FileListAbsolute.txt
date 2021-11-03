@@ -10,3 +10,6 @@ D:\Projects\SocialNet\SocialNetServices\obj\Debug\net5.0\SocialNetServices.cspro
 D:\Projects\SocialNet\SocialNetServices\obj\Debug\net5.0\SocialNetServices.dll
 D:\Projects\SocialNet\SocialNetServices\obj\Debug\net5.0\ref\SocialNetServices.dll
 D:\Projects\SocialNet\SocialNetServices\obj\Debug\net5.0\SocialNetServices.pdb
+D:\Projects\SocialNet\SocialNetServices\bin\Debug\net5.0\SocialNetData.dll
+D:\Projects\SocialNet\SocialNetServices\bin\Debug\net5.0\SocialNetData.pdb
+D:\Projects\SocialNet\SocialNetServices\obj\Debug\net5.0\SocialNetServices.csproj.CopyComplete

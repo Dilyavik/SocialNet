@@ -11,9 +11,12 @@ using System.Threading.Tasks;
 
 namespace SocialNetServices.Services
 {
+    /// <summary>
+    /// Серсвис пользователя
+    /// </summary>
     public class UserService : IUserService
     {
-        public DataContext _db;
+        private readonly DataContext _db;
         public UserService(DataContext db)
         {
             _db = db;

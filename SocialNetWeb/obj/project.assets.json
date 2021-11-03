@@ -1522,6 +1522,19 @@
         "runtime": {
           "bin/placeholder/SocialNetData.dll": {}
         }
+      },
+      "SocialNetServices/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "SocialNetData": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/SocialNetServices.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SocialNetServices.dll": {}
+        }
       }
     }
   },
@@ -5771,13 +5784,19 @@
       "type": "project",
       "path": "../SocialNetData/SocialNetData/SocialNetData.csproj",
       "msbuildProject": "../SocialNetData/SocialNetData/SocialNetData.csproj"
+    },
+    "SocialNetServices/1.0.0": {
+      "type": "project",
+      "path": "../SocialNetServices/SocialNetServices.csproj",
+      "msbuildProject": "../SocialNetServices/SocialNetServices.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
       "Microsoft.EntityFrameworkCore.Design >= 5.0.11",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.11",
-      "SocialNetData >= 1.0.0"
+      "SocialNetData >= 1.0.0",
+      "SocialNetServices >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -5809,6 +5828,9 @@
           "projectReferences": {
             "D:\\Projects\\SocialNet\\SocialNetData\\SocialNetData\\SocialNetData.csproj": {
               "projectPath": "D:\\Projects\\SocialNet\\SocialNetData\\SocialNetData\\SocialNetData.csproj"
+            },
+            "D:\\Projects\\SocialNet\\SocialNetServices\\SocialNetServices.csproj": {
+              "projectPath": "D:\\Projects\\SocialNet\\SocialNetServices\\SocialNetServices.csproj"
             }
           }
         }

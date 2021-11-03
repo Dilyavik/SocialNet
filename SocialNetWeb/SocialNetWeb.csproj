@@ -14,6 +14,11 @@
 
   <ItemGroup>
     <ProjectReference Include="..\SocialNetData\SocialNetData\SocialNetData.csproj" />
+    <ProjectReference Include="..\SocialNetServices\SocialNetServices.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\css\RegistrationStyle.css" />
   </ItemGroup>
 
 </Project>

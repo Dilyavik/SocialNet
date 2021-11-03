@@ -56,3 +56,15 @@ D:\Projects\SocialNet\SocialNetWeb\obj\Debug\net5.0\SocialNetWeb.pdb
 D:\Projects\SocialNet\SocialNetWeb\obj\Debug\net5.0\SocialNetWeb.genruntimeconfig.cache
 D:\Projects\SocialNet\SocialNetWeb\bin\Debug\net5.0\Humanizer.dll
 D:\Projects\SocialNet\SocialNetWeb\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\Projects\SocialNet\SocialNetWeb\bin\Debug\net5.0\SocialNetWeb.Views.dll
+D:\Projects\SocialNet\SocialNetWeb\bin\Debug\net5.0\SocialNetWeb.Views.pdb
+D:\Projects\SocialNet\SocialNetWeb\bin\Debug\net5.0\SocialNetServices.dll
+D:\Projects\SocialNet\SocialNetWeb\bin\Debug\net5.0\SocialNetServices.pdb
+D:\Projects\SocialNet\SocialNetWeb\obj\Debug\net5.0\SocialNetWeb.RazorAssemblyInfo.cache
+D:\Projects\SocialNet\SocialNetWeb\obj\Debug\net5.0\SocialNetWeb.RazorAssemblyInfo.cs
+D:\Projects\SocialNet\SocialNetWeb\obj\Debug\net5.0\SocialNetWeb.TagHelpers.input.cache
+D:\Projects\SocialNet\SocialNetWeb\obj\Debug\net5.0\SocialNetWeb.TagHelpers.output.cache
+D:\Projects\SocialNet\SocialNetWeb\obj\Debug\net5.0\SocialNetWeb.RazorCoreGenerate.cache
+D:\Projects\SocialNet\SocialNetWeb\obj\Debug\net5.0\Razor\Views\User\Registration.cshtml.g.cs
+D:\Projects\SocialNet\SocialNetWeb\obj\Debug\net5.0\SocialNetWeb.RazorTargetAssemblyInfo.cs
+D:\Projects\SocialNet\SocialNetWeb\obj\Debug\net5.0\SocialNetWeb.Views.pdb

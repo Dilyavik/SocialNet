@@ -6,6 +6,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using SocialNetData;
+using SocialNetServices.Interfaces;
+using SocialNetServices.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -27,7 +29,14 @@ namespace SocialNetWeb
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<DataContext>(options => 
+
+            services.AddHttpContextAccessor();
+            services.AddControllers();
+            services.AddMvc();
+
+            services.AddScoped<IUserService, UserService>();
+
+            services.AddDbContext<DataContext>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
         }
 
@@ -39,14 +48,16 @@ namespace SocialNetWeb
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseStaticFiles();
             app.UseRouting();
+
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapGet("/", async context =>
-                {
-                    await context.Response.WriteAsync("Hello World!");
-                });
+                // определение маршрутов
+                endpoints.MapControllerRoute(
+                    name: "default",
+                    pattern: "{controller=User}/{action=Registration}");
             });
         }
     }

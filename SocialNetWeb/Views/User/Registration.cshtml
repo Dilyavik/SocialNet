@@ -1,0 +1,48 @@
+﻿@model SocialNetWeb.Models.RegistrationRequest
+@{
+    <!DOCTYPE HTML>
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <title>Регистрация</title>
+        <link type="text/css" rel="stylesheet" href="~/css/RegistrationStyle.css" />
+
+    </head>
+    <body>
+        <form method="post">
+            <table>
+                <tr>
+                    <td colspan="2">
+                        <h1>
+                            Регистрация
+                        </h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input placeholder="Имя" name="FirstName">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input placeholder="Фамилия" name="SecondName">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input placeholder="Логин" name="Login">
+
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input placeholder="Пароль" type="password" name="Password">
+                    </td>
+                </tr>
+                <tr><td colspan="2"><button type="submit">Сохранить</button> </td></tr>
+             
+            </table>
+        </form>
+    </body>
+</html>
+}
