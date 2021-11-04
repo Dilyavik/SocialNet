@@ -50,5 +50,25 @@ namespace SocialNetServices.Services
 
             return true;
         }
+
+
+        /// <summary>
+        /// Авторизация пользователя
+        /// </summary>
+        /// <param name="request"></param>
+        /// <returns></returns>
+        public async Task<bool> Login(LoginRequest request)
+        {
+            if (string.IsNullOrWhiteSpace(request.Login)) throw new Exception("Введите логин");
+            if (string.IsNullOrWhiteSpace(request.Password)) throw new Exception("Введите пароль");
+
+
+            var correct = await _db.Users.AnyAsync(x => x.Login == request.Login && x.Password == request.Password);
+
+            if (correct)
+                return true;
+            else
+                return false;
+        }
     }
 }

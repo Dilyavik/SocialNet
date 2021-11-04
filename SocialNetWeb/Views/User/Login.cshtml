@@ -1,0 +1,38 @@
+﻿@model SocialNetWeb.Models.LoginRequest
+@{
+    <!DOCTYPE HTML>
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <title>Авторизация</title>
+        <link type="text/css" rel="stylesheet" href="~/css/LoginStyle.css" />
+
+    </head>
+    <body>
+        <form method="post">
+            <table>
+                <tr>
+                    <td>
+                        <h1>
+                            Авторизация
+                        </h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input placeholder="Логин" name="Login">
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input placeholder="Пароль" type="password" name="Password">
+                    </td>
+                </tr>
+                <tr><td><button name="login" type="submit">Войти</button> </td></tr>
+
+            </table>
+        </form>
+    </body>
+</html>
+}

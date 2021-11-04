@@ -27,13 +27,21 @@ namespace SocialNetWeb.Controllers
             return View();
         }
 
-
+        /// <summary>
+        /// Регистрация
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         public async Task<IActionResult> Registration()
         {
             return View();
         }
 
+        /// <summary>
+        /// Регистрация
+        /// </summary>
+        /// <param name="request"></param>
+        /// <returns></returns>
         [HttpPost]
         public async Task<IActionResult> Registration(RegistrationRequest request)
         {
@@ -47,5 +55,36 @@ namespace SocialNetWeb.Controllers
 
             return Content("Регистрация прошла успешно");
         }
+
+
+        /// <summary>
+        /// Авторизация
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet]
+        public async Task<IActionResult> Login()
+        {
+            return View();
+        }
+
+        /// <summary>
+        /// Авторизация
+        /// </summary>
+        /// <returns></returns>
+        [HttpPost]
+        public async Task<IActionResult> Login(Models.LoginRequest request)
+        {
+            var loginSuccess = await _userService.Login(new SocialNetServices.Models.LoginRequest()
+            {
+                Login = request.Login,
+                Password = request.Password
+            });
+
+            if (loginSuccess)
+                return Content("Пользователь авторизован");
+            else
+                return Content("Неверный логин или пароль");
+        }
+
     }
 }

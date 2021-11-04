@@ -68,3 +68,4 @@ D:\Projects\SocialNet\SocialNetWeb\obj\Debug\net5.0\SocialNetWeb.RazorCoreGenera
 D:\Projects\SocialNet\SocialNetWeb\obj\Debug\net5.0\Razor\Views\User\Registration.cshtml.g.cs
 D:\Projects\SocialNet\SocialNetWeb\obj\Debug\net5.0\SocialNetWeb.RazorTargetAssemblyInfo.cs
 D:\Projects\SocialNet\SocialNetWeb\obj\Debug\net5.0\SocialNetWeb.Views.pdb
+D:\Projects\SocialNet\SocialNetWeb\obj\Debug\net5.0\Razor\Views\User\Login.cshtml.g.cs

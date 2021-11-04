@@ -13,10 +13,16 @@ namespace SocialNetServices.Interfaces
     public interface IUserService
     {
         /// <summary>
-        /// Регистрация
+        /// Регистрация пользователя
         /// </summary>
         /// <param name="request"></param>
         /// <returns></returns>
         public Task<bool> Registration(UserRegistrationRequest request);
+        /// <summary>
+        /// Авторизация пользователя
+        /// </summary>
+        /// <param name="request"></param>
+        /// <returns></returns>
+        public Task<bool> Login(LoginRequest request);
     }
 }
