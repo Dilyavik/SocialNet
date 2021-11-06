@@ -34,6 +34,9 @@ namespace SocialNetWeb
             services.AddControllers();
             services.AddMvc();
 
+            services.AddDistributedMemoryCache();
+            services.AddSession();
+
             services.AddScoped<IUserService, UserService>();
 
             services.AddDbContext<DataContext>(options =>
@@ -48,6 +51,7 @@ namespace SocialNetWeb
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseSession();
             app.UseStaticFiles();
             app.UseRouting();
 

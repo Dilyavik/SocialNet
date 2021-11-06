@@ -23,6 +23,12 @@ namespace SocialNetServices.Interfaces
         /// </summary>
         /// <param name="request"></param>
         /// <returns></returns>
-        public Task<bool> Login(LoginRequest request);
+        public Task<int> Login(LoginRequest request);
+        /// <summary>
+        /// Получить информацию о пользователе
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        public Task<GetUserResponse> GetUser(int id);
     }
 }

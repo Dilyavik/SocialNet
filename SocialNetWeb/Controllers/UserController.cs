@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using SocialNetData;
 using SocialNetServices.Interfaces;
 using SocialNetServices.Models;
@@ -74,17 +75,32 @@ namespace SocialNetWeb.Controllers
         [HttpPost]
         public async Task<IActionResult> Login(Models.LoginRequest request)
         {
-            var loginSuccess = await _userService.Login(new SocialNetServices.Models.LoginRequest()
+            var userId = await _userService.Login(new SocialNetServices.Models.LoginRequest()
             {
                 Login = request.Login,
                 Password = request.Password
             });
+            HttpContext.Session.SetInt32("UserId", userId);
 
-            if (loginSuccess)
-                return Content("Пользователь авторизован");
-            else
-                return Content("Неверный логин или пароль");
+            return Content("Пользователь авторизован");
         }
 
+        /// <summary>
+        /// Профиль пользователя
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet]
+        public async Task<IActionResult> Profile()
+        {
+            var userId = HttpContext.Session.GetInt32("UserId");
+            var result = await _userService.GetUser(userId.Value);
+            var user = new UserResponse()
+            {
+                FirstName = result.FirstName,
+                SecondName = result.SecondName
+            };
+
+            return View(user);
+        }
     }
 }

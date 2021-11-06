@@ -1,0 +1,34 @@
+﻿@model SocialNetWeb.Models.UserResponse
+@{
+    <!DOCTYPE HTML>
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <title>Профиль</title>
+        <link type="text/css" rel="stylesheet" href="~/css/ProfileStyle.css" />
+
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td>
+                    <h1>
+                        Мой профиль
+                    </h1>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @Model.FirstName
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @Model.SecondName
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
+}

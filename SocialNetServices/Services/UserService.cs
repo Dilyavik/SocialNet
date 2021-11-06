@@ -57,18 +57,36 @@ namespace SocialNetServices.Services
         /// </summary>
         /// <param name="request"></param>
         /// <returns></returns>
-        public async Task<bool> Login(LoginRequest request)
+        public async Task<int> Login(LoginRequest request)
         {
             if (string.IsNullOrWhiteSpace(request.Login)) throw new Exception("Введите логин");
             if (string.IsNullOrWhiteSpace(request.Password)) throw new Exception("Введите пароль");
 
 
-            var correct = await _db.Users.AnyAsync(x => x.Login == request.Login && x.Password == request.Password);
+            var user = await _db.Users.FirstOrDefaultAsync(x => x.Login == request.Login && x.Password == request.Password);
 
-            if (correct)
-                return true;
+
+            if (user == null)
+                throw new Exception("Пользователь не найден");
             else
-                return false;
+                return user.Id;
+        }
+
+
+        /// <summary>
+        /// Получить информацию о пользователе
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        public async Task<GetUserResponse> GetUser(int id)
+        {
+            var user = await _db.Users.Where(x => x.Id == id).Select(x => new GetUserResponse()
+            {
+                FirstName = x.FirstName,
+                SecondName = x.SecondName
+            }).FirstOrDefaultAsync();
+
+            return user;
         }
     }
 }

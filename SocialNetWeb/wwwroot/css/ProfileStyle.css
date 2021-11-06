@@ -1,0 +1,26 @@
+﻿body {
+    background-color: #292929;
+    color: #424242;
+}
+
+h1 {
+    text-align: center;
+}
+
+table {
+    width: 300px; /* Ширина таблицы */
+    margin: auto; /* Выравниваем таблицу по центру окна  */
+    background-color: #FDFADD;
+    margin-top: 10%;
+    border-radius: 10px;
+    border: 0;
+}
+
+td {
+    text-align: center;
+    border: 0;
+}
+
+.cellss {
+    left: 50%;
+}
